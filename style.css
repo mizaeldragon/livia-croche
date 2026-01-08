@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fde2e4, #f8bbd0);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-float:hover {
+  cursor: pointer;
+  scale: 105%;
+  transition-duration: 300ms;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #f48fb1;
+  object-fit: cover;      /* 🔥 ESSENCIAL */
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 15px;
+  color: #d81b60;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.links {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link {
+  background: #ec407a;
+  color: white;
+  padding: 14px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link:hover {
+  background: #d81b60;
+  transform: scale(1.03);
+}
+
+/* Galeria */
+#galeria {
+  margin-top: 35px;
+}
+
+#galeria h2 {
+  color: #d81b60;
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;
+}
